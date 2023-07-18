@@ -1,34 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="kinoworld.css">
-    <title>KINOworld</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="lastofus.css">
+  <title>KINOworld</title>
 </head>
+
 <body>
-    
 
-<div class="input__section">
-    
-    <div class="input-group flex-nowrap">
-        <input type="text" class="form-control input-sm" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Bootstrap" width="200">
+      </a>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn btn-outline-danger" type="submit">Search</button>
+      </form>
+
+    </div>
+
+  </nav>
+
+  <section class="main__content">
+    <div class="row">
+      <div class="col-3">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#item-1">Character Overview</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ms-3 my-1" href="#nickname">Nickname</a>
+            </nav>
+
+            <a class="nav-link" href="#appearence">Appearance</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ms-3 my-1" href="#human">Human</a>
+              <a class="nav-link ms-3 my-1" href="#claymore">Claymore</a>
+              <a class="nav-link ms-3 my-1" href="#awakened">Awakened Being</a>
+            </nav>
+
+            <a class="nav-link" href="#abilities">Abilities</a>
+
+          </nav>
+        </nav>
       </div>
 
-      <div class="input-group flex-nowrap">
-        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+      <div class="col-8">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+          class="scrollspy-example-2" tabindex="0">
+          <div id="item-1">
+            <div class="content-main">
+              <img src="priscilla-pic.webp" alt="">
+              <div class="overview-text">
+                <p> <span style="font-weight: bold;"> Teresa</span> is the 182nd Claymore of the 77th generation
+                  in the Organization, formerly ranked as No. 1. She is among the eight No. 1 warriors capable of
+                  surpassing
+                  the original Abyssal Ones, considered even to be the strongest ever created. She is also regarded as
+                  the
+                  most powerful character in the series for her unparalleled combat ability, Yoki sensing, and Yoki
+                  reserve,
+                  even against an awakened Rosemary or a near-awakened Priscilla, a mere ten-percent energy release was
+                </p>
+
+                <p> “ <span style="font-style: italic; font-weight: bold;"> You can come after me as many times as you
+                    want. I'll cut you down every time.</span> ”</p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="point">
+            <div id="nickname">
+              <h5>Nickname</h5>
+              <p>She was nicknamed "Teresa of the Faint Smile" (微笑のテレサ, Bishō no Teresa, lit. "Smiling Teresa") for the
+                faint smiles that graced her face as she effortlessly slaughtered her enemies.</p>
+            </div>
+          </div>
+
+          <div class="point"></div>
+          <div id="appearence">
+            <h4>Appearance</h4>
+
+          </div>
+
+          <div class="point"></div>
+          <div id="human">
+            <h5>Human</h5>
+            <p>In a dream, Teresa remembered her once-black hair, which she had considered to be her best feature, and
+              black eyes. She lost both after joining the Organization.
+
+            </p>
+          </div>
+
+          <div class="point"></div>
+          <div id="claymore">
+            <h5>Claymore</h5>
+            <p>Claymore
+              Teresa had long, wavy, pale blonde hair parted down the middle, which she wore loose. She had silver eyes
+              like all other Claymores and wore the standard uniform. Her figure was quite feminine and shapely. Teresa
+              was also considered to be beautiful; several of the bandits who attacked her and Clare in the forest
+              commented lewdly that she was very attractive.
+
+              <li>Height: 180 cm (5 ft 10.86 in)</li>
+              <li> <span style="color: red;">На картинки можно тыкать!</span></li>
+
+            <div class="app_img">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="pic-1-1.webp" alt="">
+              </button>
+
+              <!-- Modal  -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Ой! Что-то пошло не так...</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p> Большие картинки не подвезли :"( Придется идти искать самому</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="pic-2-2.webp" alt="">
+              </button>
+
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="pic-3-3.webp" alt="">
+              </button>
+
+
+            </div>
+
+            </p>
+          </div>
+
+          <div class="point"></div>
+          <div id="awakened">
+            <h5>Awakened Being</h5>
+            <p>Teresa's awakened form is unusual compared to other awakened forms, as it is nearly identical to her
+              human form. She sports two pairs of wings—a pair of larger ones arising from her upper back, and a pair of
+              smaller ones at her lower back right above her buttocks. The wings are reminiscent of the traditional
+              depiction of the twin goddesses Clare and Teresa. The other change is that the medial aspects of her
+              thighs and legs have exposed muscles, the surrounding skin forming a scalloped edge. Galatea describes
+              Teresa's awakened form, as seen under her "sight," as the very form of the twin goddesses. Teresa's
+              awakened form was likely inspired by a Valkyrie.</p>
+          </div>
+
+          <div class="point"></div>
+          <div id="abilities">
+            <h5>Abilities</h5>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Fine Yoki Sensing
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Noted first by <strong>Irene</strong>, Teresa's greatest strength is her outstanding technique to
+                    sense Yoki so
+                    acutely that she can detect the most minute changes in the Yoki flow of both Yoma and Warriors
+                    alike, accurately predicting and counter their every move. This skill allows Teresa to judge the
+                    strength, speed, and direction of an attack before her enemies can act. Irene concludes that
+                    Teresa's adeptness in this area was the main reason why she was the top warrior of her
+                    generation. <br>
+
+                    As a trainee, Teresa was also able to track down Rafaela, who had completely erased her aura after
+                    the incident with Luciela, in the woods, surprising Rafaela as she thought her yoki aura was
+                    erased. <br>
+
+                    Her sensory abilities are so advanced that she could predict exactly where to strike Priscilla,
+                    despite the latter being faster than Hysteria's awakened form, so fast that she was virtually
+                    invisible.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Sword technique
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Teresa basically uses the standard sword technique. This version of an actually ordinary technique
+                    can counter extraordinary or specialized techniques from other warriors. After relying on her sword
+                    technique alone, she adapt, and overwhelmed Priscilla and the suppression squad. Other
+                    powerful No. 1 warriors' standard sword skills are on significantly reduced levels. This shows the
+                    huge difference between their overall abilities; for example, Roxanne mentions that Cassandra's
+                    standard sword technique is only No. 5 level.[15] Warriors develop special techniques to enhanced
+                    their fighting capability against powerful Yoma and awakened beings, which in Teresa's case, is not
+                    necessary. Despite slightly injured by awakened Priscilla as she matched her speed, Teresa was able
+                    to adapt and continued to shatter her body, although Priscilla grew stronger with each
+                    regeneration. <br>
+
+                    Similiar to Rafaela, Teresa casually used her legs to perform powerful kicks, which brings her
+                    opponents at distance. <br>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Mimicry
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Teresa is able to copying other warriors techniques, so she was able to use Cassandra's
+                    unique Dust Eater with perfect precision, even though she met her the first time. As well as
+                    other techniques, Clare has learned or witnessed before.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
       </div>
-
-      <div class="forgot__pass">Forgot password?</div>
-
-      <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
-</div>
+    </div>
+  </section>
 
 
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>FANDOM
+            </h6>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo accusantium, repellendus molestias facere
+              temporibus ducimus accusamus quo officia quos dolores!
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              EXPLORE PROPERTIES
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Fandom</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Muthead</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Futhead</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> Fanatical</a>
+            </p>
+          </div>
+          <!-- Grid column -->
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Twitter</p>
+            <p>Facebook</p>
+            <p><i class="fas fa-phone me-3"></i> YouTube</p>
+            <p><i class="fas fa-print me-3"></i> LinkedIn</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://claymore.fandom.com/wiki/Teresa#Abilities_and_Skill">Claymore Wiki is
+        a FANDOM Anime Community.</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
